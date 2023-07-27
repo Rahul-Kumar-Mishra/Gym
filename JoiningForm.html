@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining Form</title>
+
+    <style>
+
+        body{
+            color: aqua;
+            background-color: black;
+            /* background: linear-gradient(yellow, aqua); */
+        }
+
+        div{
+            /* border: 2px solid red; */
+            margin: 2vw;
+        }
+        
+        h1{
+            color: orangered;
+            text-align: center;
+            /* font-size: 350%; */
+        }
+
+        .middle{
+            display: flex;
+            align-content: right;
+
+        }
+        .basic, .addr, .contact{
+            padding-left: 40px;
+            padding-right: 40px;
+            margin: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .middle{
+            display: inline-block;
+            align-content: right;
+
+            }    
+        }
+
+        @media (max-width: 255px){
+            .given-condition{
+                overflow-x: scroll;
+            }
+        }
+
+        
+        button{
+            width: 100%;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-radius: 4px;
+            border: none;
+            font-weight: bolder;
+            background-color: rgb(255, 111, 0);
+        }
+
+        .tag-line{
+            font-size: 152%;
+            color: blueviolet;
+            
+        }
+
+        .given-condition{
+            border: 2px solid white;
+            border-radius: 10px 0 10px 0;
+            padding: 25px;
+            padding-top: 5px !important;
+            margin-bottom: 5px;
+            background: linear-gradient(black, purple); 
+            /* background: linear-gradient(yellow, aqua);*/
+            color: antiquewhite;
+
+        }
+        .condition-heading{
+            color: rgb(211, 15, 15);
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="inner">
+
+            <div class="container">
+
+                <div class="heading">
+                    <h1>The Fitness Factory</h1>
+                </div>
+
+            <form action="">
+                <div class="middle">
+                    
+
+
+                        <div class="basic">
+
+                            <span class="tag-line">Basic Details: </span> <br>
+
+                            <label for="myname">Full Name</label> <br>
+                            <input type="text" name="myname" id="myname"> <br> <br>
+
+                            <label for="cw">Current Weight</label> <br>
+                            <input type="number" name="cw" id="cw"> <br> <br>
+
+                            <label for="myheight">Height</label> <br>
+                            <input type="number" name="myheight" id="myheight"> <br> <br>
+
+                            <label for="bmi">BMI</label> <br>
+                            <input type="number" name="bmi" id="bmi"> <br> <br>
+
+                            <label for="myage">Age</label> <br>
+                            <input type="number" name="myage" id="myage"> <br> <br>
+
+                            <label for="gw">Goal Weight</label> <br>
+                            <input type="number" name="gw" id="gw"> <br> <br>
+                        </div>
+
+                        <div class="addr">
+                            <span class="tag-line">Address:</span> <br>
+
+                            <label for="mystreet">Street</label> <br>
+                            <input type="text" name="mystreet" id="mystreet"> <br> <br>
+
+                            <label for="mycity">City</label> <br>
+                            <input type="text" name="mycity" id="mycity"> <br> <br>
+
+                            <label for="mystate">State</label> <br>
+                            <input type="text" name="mystate" id="mystate"> <br> <br>
+                        </div>
+
+                        <div class="contact">
+                            <span class="tag-line">Contact Details:</span> <br>
+
+                            <label for="myphone" maxlength="10" minlength="10">Phone Number</label> <br>
+                            <input type="number" name="myphone" id="myphone"> <br> <br>
+
+                            <label for="myemail">E-Mail</label> <br>
+                            <input type="email" name="myemail" id="myemail"> <br> <br>
+
+                        </div>
+
+
+                        
+
+
+
+                    
+                </div>
+
+                <div class="base">
+
+                    <div class="given-condition">
+                        <div class="condition-written">
+                            <h1 class="condition-heading">Terms & Conditions </h1>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, dolor.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sapiente,
+                            repellat eligendi modi ipsum aperiam, sequi sunt maxime mollitia quis dicta
+                            quasi, illo nulla iste eaque? Vero facere assumenda ea!
+                        </div>
+                    </div>
+
+                    <div class="submit-part">
+                        <input type="checkbox" name="mycheck" id="mycheck"> 
+                        I have Read Understand and Agree to the Grace Transformation 
+                        Challenge Rules and Regulations.
+
+                        <br>
+                        <br>
+
+                        <button value="submit">Submit</button><br>
+                        
+                    </div>
+                </div>
+
+            </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    // var check = document.querySelector("input[name=mycheck]");
+    var check = document.getElementById("mycheck");
+    var btn = document.querySelector('button');
+
+    btn.addEventListener('click', function(){
+        if(check.checked){
+            
+        }
+        else{
+            alert("Accept the terms and condition and then submit");
+            
+        }
+    });
+
+    
+
+</script>
+</html>

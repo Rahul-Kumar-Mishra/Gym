@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+</head>
+
+    <style>
+        img{
+            width: 30%;
+        }
+    </style>
+<body>
+    
+    <img src="image1.jpg" alt="1/2/6/7">
+    <img src="image3.jpg" alt="3/4/5">
+
+    <button onclick="forImage()">click</button>
+    
+    
+
+</body>
+
+    <script>
+
+        
+
+        function forImage(){
+            setInterval(changeImage(), 1000);
+
+            function changeImage(){
+                var date = new Date();
+
+                var i = date.getSeconds();
+                var x = i%7;
+                var imageSource = "image"+x+".jpg";
+                document.querySelector('img').setAttribute('src', imageSource);
+
+
+            }
+
+            
+            
+        }
+
+        document.addEventListener("load", forImage());
+
+        
+
+
+        
+        
+        
+    </script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c7cac578a.js" crossorigin="anonymous"></script>
+
+    <title>Gym Profile</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <div class="front-page">
+    <div class="nav" id="mySidenav">
+
+        <i  class="closebtn" onclick="closeNav"> &times; </i>
+        <!-- <span class="closebtn" onclick="closeNav"> &times; </span> -->
+        <ul>
+            <li> <a href="">OUR FACILTIY</a> </li>
+            <li> <a href="http://127.0.0.1:5500/webRoad/program_1.html" target="_blank">REGISTRATION</a> </li>
+            <li> <a href="">CLASSES</a> </li>
+            <li> <a href="http://127.0.0.1:5500/webRoad/Gym/GymRate.html">RATES</a> </li>
+            <li> <a href="http://127.0.0.1:5500/webRoad/Gym/Gallary.html">GALLERY</a> </li>
+            <li> <a href="">GYM EVENTS</a> </li>
+            <li> <a href="http://127.0.0.1:5500/webRoad/Gym/contactMe.html">CONTACT</a> </li>
+        </ul>
+    </div>
+    <div class="outer">
+
+
+        <div class="container">
+            <div class="header">
+                <!-- <div class="nav" id="mySidenav">
+
+                    <a href="" class="closebtn" onclick="closeNav"> &times; </a>
+                    <ul>
+                        <li> <a href="">OUR FACILTIY</a> </li>
+                        <li> <a href="http://127.0.0.1:5500/webRoad/program_1.html" target="_blank">REGISTRATION</a> </li>
+                        <li> <a href="">CLASSES</a> </li>
+                        <li> <a href="http://127.0.0.1:5500/webRoad/Gym/GymRate.html" target="_blank">RATES</a> </li>
+                        <li> <a href="">GALLERY</a> </li>
+                        <li> <a href="">GYM EVENTS</a> </li>
+                        <li> <a href="http://127.0.0.1:5500/webRoad/Gym/contactMe.html" target="_blank">CONTACT</a> </li>
+                    </ul>
+                </div> -->
+
+                <span id="open-button" onclick="openNav()">     <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+
+            <div class="middle">
+                <div class="first-content">
+                    MAINE'S <span id="premier"> PREMIER </span> AND 24 HOURS GYM
+                </div>
+
+                <div class="second-content">
+                    The Fitness Factory
+                </div>
+
+                <div class="third-content">
+                    <button><a href="http://127.0.0.1:5500/webRoad/Gym/JoiningForm.html">Join Now</a></button>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+
+                <div class="content-1">
+                    CROSSFIT
+                </div>
+
+                <div class="content-2">
+                    CVC
+                </div>
+
+                <div class="content-3">
+                    BACK TO BASIC BOOT CAMP
+                </div>
+
+                <div class="content-4">
+                    PERSONAL TRAINING
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-- <div class="gallary-outer">
+        <div class="gallary-inner">
+
+        </div>
+
+    </div> -->
+    
+</body>
+
+
+<script>
+
+    var navHidden = document.getElementById('mySidenav');
+
+    var navBG = document.querySelector('.nav');
+
+    var flag = true;
+    function openNav(){
+        if (flag){
+            navHidden.style.width = '250px';
+            navBG.style.backgroundColor = 'yellowgreen';
+            flag = false;
+        }
+        else{
+            navHidden.style.width = '0';
+            navBG.style.backgroundColor = 'black';
+            flag = true;
+        }
+
+    }
+
+    function closeNav() {
+        openNav();
+        navHidden.style.width = '0px';
+        
+    }
+
+
+    
+</script>
+</html>

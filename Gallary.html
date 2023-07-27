@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+        img{
+            width: 30vw;
+            height: 30vw; 
+            padding-right: 2vw;
+            background-color: black;
+            
+            /* border: 2px solid red; */
+            /* animation: change 10s infinite ease-in-out; */
+        }
+        
+
+        
+        #one{
+            padding-left: 2vw;
+        }
+        .container{
+            margin-left: 1vw;
+            margin-right: 1vw;
+            display: flex;
+            /* border: 2px solid red; */
+            /* background: linear-gradient(blue, aqua); */
+        }
+        #heading{
+            font-size: 4vw;
+            /* background-color: aqua; */
+            text-align: center;
+            background: black;
+            color: burlywood;
+            
+        }
+
+        
+
+        .inner{
+            padding-bottom: 120vh;
+            background-size: cover;
+            background-color: black;
+            /* background-color: aquamarine; */
+
+            background-image: url("image1.jpg");
+            width: 100%;
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            animation: change 20s infinite ease-in-out;
+        }
+
+         @keyframes change {
+            0%{
+                background-image: url("image7.jpg");
+            }
+            14%{
+                background-image: url("img8.jpg");
+            }
+            28%{
+                background-image: url("img9.jpg");
+            }
+            42%{
+                background-image: url("img10.jpg");
+            }
+            56%{
+                background-image: url("img11.jpg");
+            }
+            70%{
+                background-image: url("img12.jpg");
+            }
+            84%{
+                background-image: url("img13.jpg");
+            }
+            99%{
+                background-image: url("image4.jpg");
+            }
+            100%{
+                background-image: url("image7.jpg");
+            }
+        } 
+
+        .head-line{
+            margin-left: 30vw;
+            margin-right: 30vw;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="head-line">
+            <marquee behavior="radio" direction="left" spellcheck="true">
+                <h1 id="heading">The Fitness Factory </h1>
+            </marquee>
+        </div>
+        <div class="inner"> 
+            <div class="container">
+                <div class="image-slide">
+                    <!-- <h1 id="heading">The Fitness Factory </h1> -->
+                    <!-- <marquee behavior="radio" direction="left">
+                    <img id="one" src="image4.jpg" alt="4">
+                    <img src="image5.jpg" alt="5">
+                    <img src="image3.jpg" alt="3">
+                    <img src="image2.jpg" alt="2">
+                    <img src="image1.jpg" alt="1">
+                    <img src="image6.jpg" alt="6">
+                    <img src="image7.jpg" alt="7">
+                </marquee> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

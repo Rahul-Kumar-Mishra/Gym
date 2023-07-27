@@ -1,0 +1,405 @@
+
+
+body{
+    background-image: url("gymBackground.jpg");
+    animation: forbody 50s infinite ease-in-out;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    /* background-size: cover; */
+    
+    background-color: black;
+} 
+
+ 
+/*
+@keyframes forbody {
+    0%{
+        background-image: url("gymBackground.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+
+    16%{
+        background-image: url("img8.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+
+    30%{
+        background-image: url("img9.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+
+    44%{
+        background-image: url("img10.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+
+    58%{
+        background-image: url("img11.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+
+    72%{
+        background-image: url("img12.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+
+    86%{
+        background-image: url("img13.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+
+    100%{
+        background-image: url("image4.jpg");
+        background-repeat: no-repeat !important;
+        background-size: cover;
+    }
+}
+
+*/
+
+
+/***********************  TOP PORTION  ****************************************/
+
+
+
+div{
+    /* border: 3px solid red; */
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div #mySidenav{
+    margin-left: 0px;
+}
+
+
+
+.nav{
+    /* align-content: right; */
+    display: flex;
+    /* margin-left: 20vw; */
+    margin-top: 0;
+    
+}
+
+ul{
+    list-style-type: disc;
+    align-items: right;
+}
+
+ul li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    /********************/
+    color: white;
+    /********************/
+}
+
+ul li a:hover{
+    color: blueviolet;
+}
+
+
+
+/***********************  MIDDLE PORTION  ****************************************/
+
+
+.first-content{
+    text-align: center;
+    padding-top: 8vh;
+    font-size: 4.2vw;
+    /********************/
+    color: aqua;
+    /********************/
+
+}
+
+#premier{
+    color: orangered;
+}
+
+.second-content{
+    text-align: center;
+    font-size: 2.3vw;
+    /********************/
+    color: aqua;
+    /********************/
+    animation: change 10s infinite ease-in-out;
+}
+
+.third-content{
+    text-align: center;
+    padding-top: 4vh;
+
+    padding-bottom: 50px;
+
+    /********************/
+    color: aqua;
+    /*******************/
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    background-color: tomato;
+    
+    font-size: 2.1vw;
+    /* color: aqua; */
+    text-shadow: 1px 1.5px black;
+    
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/************************   LOWER PORTION  *******************************************/
+
+
+
+
+
+.bottom{
+    display: flex;
+    margin-top: 12vw;
+
+}
+
+.content-1, .content-2, .content-3, .content-4{
+    display: flex;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+    /********************/
+    color: white;
+    /********************/
+
+    font-size: 150%;
+
+}
+
+
+
+
+
+
+
+
+/****************   Media Query  825px  *************************************/
+
+
+
+@media (max-width: 825px){
+
+
+    /**************  Upper Part Inside Media Query 825px  *********************/
+
+    ul li a{
+        font-size: 20px;
+        margin: 15px;
+        padding-top: 5px;
+    }
+
+    
+
+
+     .nav{
+        /* align-content: right; */
+        display: flex;
+        margin-left: 0;
+        margin-top: 0;
+        
+    } 
+
+
+    /**************  Middle Part Inside Media Query 825px  *********************/
+
+
+    .first-content{
+        font-size: 40px;
+    }
+
+    .second-content{
+        font-size: 29px;
+        
+    }
+
+    
+
+    
+
+
+    button{
+        border-radius: 10px;
+        border: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        background-color: tomato;
+        
+        font-size: 35px;
+        /* color: aqua; */
+        text-shadow: 2px 3px black;
+        
+    }
+
+
+    /**************  Lower Part Inside Media Query 825px *********************/
+
+    .bottom{
+        display: inline;
+        margin-top: 12vw;
+    
+    }
+
+    .content-1, .content-2, .content-3, .content-4{
+        display: block;
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
+        /********************/
+        color: aqua;
+        /********************/
+    
+        font-size: 30px;
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+/*************** Side Navigation Bar *******************/
+
+#open-button{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    /* right: 0px; */
+    /* background-color: peru; */
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.nav .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+    
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.closebtn{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/************* Media Query at 600px  **********************************/
+
+@media (max-width:600px){
+    body{
+        background-color: black;
+        background-image: url("");
+    }
+}
+
+
+/************* Media Query at 600px  **********************************/
+
+@media (max-width:820px){
+    body{
+        background-color: black;
+        background-image: url("");
+    }
+}
+
+
+
+
+
+
+@keyframes change {
+    0%{
+        color: red;
+        
+    }
+    50%{
+        color:blueviolet;
+    }
+    100%{
+        color:green;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************   GALLARY     ************************************/
+
+.gallary-outer{
+    padding: 20px;
+    background-color: green;
+
+}
